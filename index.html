@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Derrick Li | Interests</title>
+    <title>Shouyi Li | Profile</title>
 
     <link rel="stylesheet" href="main.css"> 
 
@@ -15,73 +15,27 @@
             margin-left: auto;
             margin-right: auto;
             display: flex;
-        }
-
-        #sidebar {
-            width: 200px;
-            padding: 15px;
-            background-color: #DDD;
-            text-align: center;
-        }
-
-        .sidepic {
-            width: 170px;
+            color: white;
         }
 
         #content {
-            width: 700px;
+            width: 940px;
             padding: 20px;
-            background-color: whitesmoke;
+            background-color: #222;
         }
 
-        #punk {
-            height: 200px;
-            width: auto;
-            float: right;
-            padding-left: 10px;
+        a {
+            color: whitesmoke; 
+            /* text-decoration: none; Optional: removes underline */
         }
 
-        #greenday1 {
-            height: 240px;
-            width: auto;
-            float: right;
-            padding-left: 10px;
+        a:hover {
+            color: #ffcc00; /* Optional: hover color for effect */
         }
 
-        #greenday2 {
-            height: 130px;
-            width: auto;
-            float: left;
-            padding-right: 10px;
+        #edu {
+            margin-top: 50px;
         }
-
-        #visual1 {
-            height: 180px;
-            width: auto;
-            float: left;
-            padding-right: 10px;
-        }
-
-        #visual2 {
-            height: 170px;
-            width: auto;
-            float: right;
-            padding-left: 10px;
-        }
-
-        .img-container > p{
-            visibility: hidden;
-        }
-
-        .img-container:hover > p{
-            visibility: visible;
-        }
-
-        #sidebar-head {
-            font-family: 'Architects Daughter', cursive;
-        }
-
-
 
     </style>
 </head>
@@ -89,7 +43,7 @@
 <body>
 
 <div id="header">
-    <h1>Punk Rock</h1>
+    <h1>Shouyi Li</h1>
 </div>
     <!-- header -->
 
@@ -97,98 +51,84 @@
     <div id="nav">
         <ul>
             <li class="main-menu">
-                <a id="active-nav" href="interests_page.html">Home</a>
-                <ul>
-                    <li><a href="interests_page.html#intro">Introduction of Punk Rock</a></li>
-                    <li><a href="interests_page.html#favorite">Favorite Band</a></li>
-                    <li><a href="interests_page.html#visuals">Punk Visuals</a></li>
-                </ul>
+                <a id="active-nav" href="index.html">About</a>
             </li>
-            <li class="main-menu"><a href="gallery.html">Gallery</a></li>
+            </li>
+            <li class="main-menu">
+                <a href="experience_page.html">Experiences</a>
+            </li>
+            </li>
+            <li class="main-menu">
+                <a href="contact_me.html">Contact Me</a>
+            </li>
         </ul>      
     </div>
 </div>
 
+
+
 <div id="main">
-    <div id="sidebar">
-        <h2 id="sidebar-head">Famous Punk Rock Bands</h2>
-
-        <div class="img-container">
-            <img class="sidepic" src="img/greenday_side.jpeg" alt="Greenday">
-            <p><em>Green Day</em></p>
-        </div>  
-
-        <div class="img-container">
-            <img class="sidepic" src="img/ramones.jpeg" alt="The Ramones">
-            <p><em>The Ramones</em></p>
-        </div>
-
-        <div class="img-container">
-            <img class="sidepic" src="img/theclash.jpeg" alt="The Clash">
-            <p><em>The Clash</em></p>
-        </div>
-
-        <div class="img-container">
-            <img class="sidepic" src="img/sex_pistols.jpeg" alt="Sex Pistols">
-            <p><em>Sex Pistols</em></p>
-        </div>
-
-        <div class="img-container">
-            <img class="sidepic" src="img/the_dead_kennedys.jpeg" alt="The Dead Kennedys">
-            <p><em>The Dead Kennedys</em></p>
-        </div>
-
-        <div class="img-container">
-            <img class="sidepic" src="img/blackflag.jpeg" alt="Black Flag">
-            <p><em>Black Flag</em></p>
-        </div>
-
-        <div class="img-container">
-            <img class="sidepic" src="img/misfits.jpeg" alt="Misfits">
-            <p><em>Misfits</em></p>
-        </div>
-    </div>
-    <!-- sidebar -->
-
     <div id="content">
-        <h2 id="intro">The Music Genre of Punk Rock</h2>
-
-        <img id="punk" src="img/punk.jpeg" alt="Punk">
-
-        <p>Punk rock (or simply punk) is a music genre that emerged in the mid-1970s. Rooted in 1960s garage rock, punk bands rejected the perceived excesses of mainstream 1970s rock. They typically produced short, fast-paced songs with hard-edged melodies and singing styles, stripped-down instrumentation, and often shouted political, anti-establishment lyrics. Punk embraces a DIY ethic; many bands self-produce recordings and distribute them through independent record labels.</p>
-
-        <p>The term "punk rock" was previously used by American rock critics in the early 1970s to describe the mid-1960s garage bands. Certain late 1960s and early 1970s Detroit acts, such as MC5 and Iggy and The Stooges, and others from elsewhere created out-of-the-mainstream music that became highly influential on what was to come. Glam rock in the UK and The New York Dolls from New York have also been cited as key influences.</p>
+        <div id="about">
+            <h2>About Me</h2>
+            <div style="display: flex; align-items: flex-start;">
+                <img src="img/photo.jpg" alt="Shouyi Li" style="width: 330px; height: 450px; margin-right: 45px;">
+                <div style="max-width: 600px;">
+                    <p>
+                        I'm a graduate student at Columbia University majoring in Computer Science Machine Learning Track. 
+                        I'm passionate about using AI and software/hardware solutions to tackle real-world challenges, particularly in areas like medical imaging and high-performance computing. 
+                        My research and work experiences primarily focus on optimizing large-scale neural networks and deploying AI systems on edge devices to improve efficiency and scalability. 
+                        Previously, I worked as an LLM Inference Architecture Engineer Intern at <a href="https://www.meituan.com/en-US/about-us" target="_blank">Meituan</a>, where I focused on large-scale LLM optimization for deployment.
+                    </p>
+                    <p>
+                        I am passionate about the intersection of AI, software engineering, and high-performance computing. 
+                        During my time at the <a href="https://sites.usc.edu/fpga/" target="_blank">USC FPGA/Parallel Computing Lab</a>, 
+                        I focused on optimizing inference for Vision Transformers (ViTs) and accelerating computations on FPGA platforms under the mentorship of Professor <a href="https://sites.usc.edu/prasanna/" target="_blank">Viktor Prasanna</a>. 
+                    </p>
+                    <p>
+                        During my time at the <a href="https://dornsife.usc.edu/kuhn/" target="_blank">USC Convergent Science Institute in Cancer</a>, 
+                        I worked on Deep Morphological Profiling of Immune Cells in Peripheral Blood under the mentorship of Dr. <a href="https://michelson.usc.edu/faculty-directory/peter-kuhn/" target="_blank">Peter Kuhn</a> and Amin Naghdloo. 
+                        This work ignited my passion in understanding immune responses in cancer research.
+                    </p>
+                    <p>
+                        When not working, I enjoy going to the gym, watching sports, and exploring delicious local cuisines with my friends.
+                    </p>
+                    <p>
+                        You can download my <a href="doc/resume_shouyi_li.pdf" target="_blank">resume</a> here.
+                    </p>
+                </div>
+            </div>
+        </div>
         
-        <p>In 1977, the influence of the music and subculture spread worldwide. It took root in a wide range of local scenes that often rejected affiliation with the mainstream. In the late 1970s, punk experienced a second wave as new acts that were not active during its formative years adopted the style. By the early 1980s, faster and more aggressive subgenres such as hardcore punk (e.g. Minor Threat), Oi! (e.g. the Exploited) and anarcho-punk (e.g. Crass) became the predominant modes of punk rock. Many musicians identifying with or inspired by punk went on to pursue other musical directions, giving rise to movements such as post-punk, new wave, and alternative rock.</p>
+        <div id="edu">
+            <p>
+                <strong>MS in Computer Science, Machine Learning Track</strong><br>
+                Columbia University, New York, NY
+            </p>
+            <p>
+                <strong>BS in Computer Engineering and Computer Science</strong><br>
+                University of Southern California, Los Angeles, CA
+            </p>
+        </div>
 
-
-        <h2 id="favorite">Favorite Band: Green Day</h2>
-
-        <img id="greenday2" src="img/greenday2.jpeg" alt="Greenday 1">
-        <img id="greenday1" src="img/greenday1.jpeg" alt="Greenday 2">
-
-        <p>Green Day is an American rock band formed in the East Bay of California in 1987 by lead vocalist and guitarist Billie Joe Armstrong and bassist and backing vocalist Mike Dirnt. For much of the band's career, they have been a trio with drummer Tre Cool, who replaced John Kiffmeyer in 1990 before the recording of the band's second studio album, Kerplunk (1991). Touring guitarist Jason White became a full-time member in 2012, but returned to his role as a touring member in 2016. Green Day was originally part of the late-'80s/early-'90s punk scene at the 924 Gilman Street club in Berkeley, California. The band's early releases were with the independent record label Lookout! Records. In 1994, their major-label debut Dookie, released through Reprise Records, became a breakout success and eventually shipped over 10 million copies in the U.S. Green Day is credited alongside fellow California punk bands Sublime, the Offspring, and Rancid, with popularizing mainstream interest in punk rock in the U.S.</p>
-
-        <p>Green Day has sold more than 75 million records worldwide, making them one of the best-selling music artists of all time. The group has been nominated for 20 Grammy awards and has won five of them with Best Alternative Album for Dookie, Best Rock Album for American Idiot and 21st Century Breakdown, Record of the Year for "Boulevard of Broken Dreams", and Best Musical Show Album for American Idiot: The Original Broadway Cast Recording.</p>
-
-
-        <h2 id="visuals">Visual and Other Elements</h2>
-
-        <img id="visual1" src="img/visual1.jpeg" alt="Visual 1">
-
-        <p>The classic punk rock look among male American musicians harkens back to the T-shirt, motorcycle jacket, and jeans ensemble favored by American greasers of the 1950s associated with the rockabilly scene and by British rockers of the 1960s. In addition to the T-shirt, and leather jackets they wore ripped jeans and boots, typically Doc Martens. The punk look was inspired to shock people. Richard Hell's more androgynous, ragamuffin look reputed invention of the safety-pin aesthetic was a major influence on Sex Pistols impresario Malcolm McLaren and, in turn, British punk style. (John D Morton of Cleveland's Electric Eels may have been the first rock musician to wear a safety-pin-covered jacket.) McLaren's partner, fashion designer Vivienne Westwood, credits Johnny Rotten as the first British punk to rip his shirt, and Sex Pistols bassist Sid Vicious as the first to use safety pins, although few of those following punk could afford to buy McLaren and Westwood's designs so famously worn by the Pistols, so they made their own, diversifying the 'look' with various different styles based on these designs.</p>
-
-        <img id="visual2" src="img/visual2.jpeg" alt="Visual 2">
-
-        <p>Young women in punk demolished the typical female types in rock of either "coy sex kittens or wronged blues belters" in their fashion. Early female punk musicians displayed styles ranging from Siouxsie Sioux's bondage gear to Patti Smith's "straight-from-the-gutter androgyny". The former proved much more influential on female fan styles. Over time, tattoos, piercings, and metal-studded and -spiked accessories became increasingly common elements of punk fashion among both musicians and fans, a "style of adornment calculated to disturb and outrage". Among the other facets of the punk rock scene, a punk's hair is an important way of showing their freedom of expression. The typical male punk haircut was originally short and choppy; the mohawk later emerged as a characteristic style. Along with the mohawk, long spikes have been associated with the punk rock genre.</p>
-
+        <div id="footer-links" style="display: flex; justify-content: center; gap: 20px;">
+            <a href="mailto:shouyi1024@gmail.com">
+                <img class="logo-icon" src="img/email_logo.png" alt="Email me" style="filter: invert(100%);">
+            </a>
+            <a href="https://www.linkedin.com/in/shouyili/" target="_blank">
+                <img class="logo-icon" src="img/linkedin_logo.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/shouyil1" target="_blank">
+                <img class="logo-icon" src="img/github_logo.png" alt="GitHub" style="filter: invert(100%);">
+            </a>
+        </div>
     </div>
-    
 </div>
 <!-- body -->
 
 <div id="footer">
-    Derrick Li | University of Southern California &copy; 2021
+    Shouyi Li &copy; Copyright 2024
+    
 </div>
 <!-- footer -->
 

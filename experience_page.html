@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shouyi Li | Profile</title>
+
+    <link rel="stylesheet" href="main.css"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <style>
+        
+        #main {
+            width: 970px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            color: white;
+        }
+
+        #content {
+            width: 940px;
+            padding: 20px;
+            background-color: #222;
+        }
+
+
+        .section {
+            background-color: #333;
+            padding: 30px;
+            padding-top: 20px;
+            padding-right: 35px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #f9d342;
+        }
+
+        .experience-item {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #555; 
+        }
+
+        .experience-item:last-child {
+            border-bottom: none; /* Remove line from the last experience */
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+
+        .experience-item h3 {
+            color: #f9d342;
+            font-size: 110%;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: -20px;
+        }
+
+        .date-range {
+            /* background-color: #444; */
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+
+        .experience-location {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: -8px;
+        }
+
+        .location {
+            background-color: #333;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            text-align: right;
+        }
+        
+        ul {
+            margin-top: 3px; 
+        }
+
+        ul li {
+            margin-bottom: 3px; 
+            line-height: 1.6; 
+        }
+
+        .course-list {
+            list-style-type: disc;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        .course-list li {
+            margin-bottom: 5px;
+        }
+
+        .course-toggle {
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .course-toggle:hover {
+            color: rgb(204, 204, 32);
+        }
+
+        .arrow {
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+<div id="header">
+    <h1>Shouyi Li</h1>
+</div>
+    <!-- header -->
+
+
+<div id="navbar">
+    <div id="nav">
+        <ul>
+            <li class="main-menu">
+                <a href="index.html">About</a>
+            </li>
+            </li>
+            <li class="main-menu">
+                <a id="active-nav" href="experience_page.html">Experiences</a>
+                <ul>
+                    <li><a href="experience_page.html#research-section">Research Experiences</a></li>
+                    <li><a href="experience_page.html#work-section">Work Experiences</a></li>
+                    <li><a href="experience_page.html#education-section">Education</a></li>
+                    <li><a href="experience_page.html#publication-section">Publications</a></li>
+                </ul>
+            </li>
+            </li>
+            <li class="main-menu">
+                <a href="contact_me.html">Contact Me</a>
+            </li>
+        </ul>      
+    </div>
+</div>
+
+
+
+<div id="main">
+    
+    <div id="content">
+        <!-- Research Experience Section -->
+        <div class="section" id="research-section">
+            <h2>Research Experiences</h2>
+
+            <!-- HPC lab  -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Student Researcher</h3>
+                    <span class="date-range">Mar 2023 - Jun 2024</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>USC FPGA / Parallel Computing Lab</strong></p>
+                    <span class="location">Los Angeles, CA</span>
+                </div>
+                <ul>
+                    <li>Explored solutions to data, compute, and memory intensive problems in the intersection of high speed network processing, data-intensive computing, and high performance computing</li>
+                    <li>Developed novel algorithmic optimizations and algorithm-architecture mappings to optimize performance of parallel and heterogeneous architectures including Field-Programmable Gate Arrays (FPGA), general purpose multi-core (CPU) and graphics (GPU) processors</li>
+                </ul>
+            </div>
+            
+            <!-- CSI lab  -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Student Researcher</h3>
+                    <span class="date-range">Sep 2023 - Jun 2024</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>USC Michelson Center Convergent Science Institute in Cancer</strong></p>
+                    <span class="location">Los Angeles, CA</span>
+                </div>
+                <ul>
+                    <li>Used deep learning to analyze immune cell features from blood samples of cancer patients</li>
+                    <li>Deconvolved immune repertoire from Immunofluorescence (IF) image data and predict immune cell subclasses</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <div class="section" id="work-section">
+            <h2>Work Experiences</h2>
+
+            <!-- Meituan -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>LLM Inference Architecture Engineer Intern</h3>
+                    <span class="date-range">May 2024 - Aug 2024</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>Meituan</strong></p>
+                    <span class="location">Beijing, China</span>
+                </div>
+                <ul>
+                    <li>Conducted batch inference optimizations for large-scale LLM deployment, focusing on structured static pruning, dynamic pruning, and quantization</li>
+                    <li>Implemented unstructured dynamic pruning with custom compute kernels for Feed-Forward Networks (FFNs), effectively reducing memory usage and latency</li>
+                    <li>Integrated research prototypes into production applications, leading processor and system level performance modeling</li>
+                </ul>
+            </div>
+
+            <!-- Hongmeng -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Software Engineering Intern</h3>
+                    <span class="date-range">Feb 2022 - Aug 2022</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>Hongmeng Measurement and Control Technology Co., Ltd</strong></p>
+                    <span class="location">Xuzhou, China</span>
+                </div>
+                <ul>
+                    <li>Worked as a software developer and tester for the Furnace Safety Supervision System APP</li>
+                </ul>
+            </div>
+
+            <!-- Jensen -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Software Engineering Intern</h3>
+                    <span class="date-range">May 2021 - Aug 2021</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>Jensen Industrial Washing Technology Co., Ltd</strong></p>
+                    <span class="location">Xuzhou, China</span>
+                </div>
+                <ul>
+                    <li>Served as an software engineering intern for an infrastruction APP</li>
+                </ul>
+            </div>
+
+            <!-- CS170 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Course Producer for CSCI170 - Discrete Mathematics in Computer Science</h3>
+                    <span class="date-range">Jan 2023 - May 2023</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>USC Viterbi School of Engineering</strong></p>
+                    <span class="location">Los Angeles, CA</span>
+                </div>
+            </div>
+
+            <!-- CS360 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Course Producer for CSCI360 - Introduction to Artificial Intelligence</h3>
+                    <span class="date-range">Aug 2023 - May 2024</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>USC Viterbi School of Engineering</strong></p>
+                    <span class="location">Los Angeles, CA</span>
+                </div>
+            </div>
+
+            <!-- EE354 -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Lab Mentor for EE354 - Introduction to Digital Circuits</h3>
+                    <span class="date-range">Aug 2023 - Dec 2023</span>
+                </div>
+                <div class="experience-location">
+                    <p><strong>USC Viterbi School of Engineering</strong></p>
+                    <span class="location">Los Angeles, CA</span>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Education Section -->
+        <div class="section" id="education-section">
+            <h2>Education</h2>
+
+            <!-- CU -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Columbia University</h3>
+                    <span class="date-range">Aug 2024 - Dec 2025</span>
+                </div>
+                <div class="experience-location">
+                    <p>MS in Computer Science (Machine Learning Track)</p>
+                    <span class="location">New York, NY</span>
+                </div>
+                <div class="course-toggle" onclick="toggleCourses('columbia-courses', 'arrow1')">
+                    <span id="arrow1" class="arrow">&#9654;</span> Selected Courses
+                </div>
+                <ul id="columbia-courses" class="course-list" style="display:none;">
+                    <li>COMS-4995 Deep Learning for Computer Vision</li>
+                    <li>COMS-4705 Natural Language Processing</li>
+                    <li>COMS-4774 Unsupervised Learning</li>
+                    <li>COMS-4153 Cloud Computing</li>
+                </ul>
+            </div>
+
+            <!-- USC -->
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>University of Southern California</h3>
+                    <span class="date-range">Aug 2020 - May 2024</span>
+                </div>
+                <div class="experience-location">
+                    <p>Bachelor of Science in Computer Engineering and Computer Science, GPA: 3.9/4.0</p>
+                    <span class="location">Los Angeles, CA</span>
+                </div>
+                <div class="course-toggle" onclick="toggleCourses('usc-courses', 'arrow2')">
+                    <span id="arrow2" class="arrow">&#9654;</span> Selected Courses
+                </div>
+                <ul id="usc-courses" class="course-list" style="display:none;">
+                    <li>CSCI-401 Capstone: Design and Construction of Large Software Systems</li>
+                    <li>CSCI-360 Introduction to Artificial Intelligence</li>
+                    <li>CSCI-353 Introduction to Internetworking</li>
+                    <li>CSCI-350 Introduction to Operating Systems</li>
+                    <li>CSCI-310 Software Engineering</li>
+                    <li>CSCI-270 Introduction to Algorithms and Theory of Computing</li>
+                    <li>CSCI-201 Principles of Software Development</li>
+                    <li>EE-490 Directed Research</li>
+                    <li>EE-477 MOS VLSI Circuit Design</li>
+                    <li>EE-457 Computer Systems Organization</li>
+                    <li>EE-451 Parallel and Distributed Computation</li>
+                    <li>EE-354 Introduction to Digital Circuit</li>
+                    <li>EE-250 Distributed Systems for the Internet of Things</li>
+                    <li>EE-109 Introduction to Embedded Systems</li>
+                    <li>CSCI-104 Data Structures and Object Oriented Design</li>
+                    <li>CSCI-170 Discrete Methods in Computer Science</li>
+                    <li>CSCI-103 Introduction to Programming</li>
+                    <li>ITP-115 Programming in Python</li>
+                    <li>ITP-104 Web Publishing</li>
+                    <li>MATH-407 Probability Theory</li>
+                    <li>MATH-225 Linear Algebra and Linear Differential Equations</li>
+                    <li>MATH-226 Calculus III</li>
+                    <li>MATH-126 Calculus II</li>
+                    <li>WRIT-340 Advanced Writing</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- Publication Section -->
+        <div class="section" id="publication-section">
+            <h2>Publications</h2>
+
+            <div class="experience-item">
+                <div class="experience-location">
+                    <p><i>Accelerating ViT Inference on FPGA through Static and Dynamic Pruning</i></p>
+                    <span class="location">FCCM 2024</span>
+                </div>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-location">
+                    <p><i>Investigating the Efficiency and Performance Gains of FPGA-accelerated CNN</i></p>
+                    <span class="location">CONF-MLA 2023</span>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="footer-links" style="display: flex; justify-content: center; gap: 20px;">
+            <a href="mailto:shouyi1024@gmail.com">
+                <img class="logo-icon" src="img/email_logo.png" alt="Email me" style="filter: invert(100%);">
+            </a>
+            <a href="https://www.linkedin.com/in/shouyili/" target="_blank">
+                <img class="logo-icon" src="img/linkedin_logo.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/shouyil1" target="_blank">
+                <img class="logo-icon" src="img/github_logo.png" alt="GitHub" style="filter: invert(100%);">
+            </a>
+        </div>
+
+    </div>
+</div>
+<!-- body -->
+
+<div id="footer">
+    Shouyi Li &copy; Copyright 2024
+</div>
+<!-- footer -->
+
+<script>
+    function toggleCourses(courseId, arrowId) {
+        var courseList = document.getElementById(courseId);
+        var arrow = document.getElementById(arrowId);
+        if (courseList.style.display === "none" || courseList.style.display === "") {
+            courseList.style.display = "block";
+            arrow.innerHTML = "&#9660;"; // Arrow down
+        } else {
+            courseList.style.display = "none";
+            arrow.innerHTML = "&#9654;"; // Arrow right
+        }
+    }
+</script>
+
+</body>
+</html>
